@@ -41,9 +41,9 @@ namespace ArrayFire
 	{
 		private static int _instances = 0;
 
-		internal IntPtr _ptr;
+		public IntPtr _ptr;
 
-		internal Array(IntPtr pointer)
+		public Array(IntPtr pointer)
 		{
 #if DEBUG
 			if (pointer == IntPtr.Zero) throw new ArgumentNullException("Invalid Array Pointer");
